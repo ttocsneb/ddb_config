@@ -1,0 +1,84 @@
+{
+        "stats": {
+                "stat": {
+                    "str": "top(4,6,3)",
+                    "dex": "top(4,6,3)",
+                    "con": "top(4,6,3)",
+                    "wis": "top(4,6,3)",
+                    "int": "top(4,6,3)",
+                    "cha": "top(4,6,3)"
+                },
+                "mod": {
+                    "str": "mod({stats.str})",
+                    "dex": "mod({stats.dex})",
+                    "con": "mod({stats.con})",
+                    "wis": "mod({stats.wis})",
+                    "int": "mod({stats.int})",
+                    "cha": "mod({stats.cha})"
+                },
+                "char": {
+                    "ac": "10",
+                    "speed": "30",
+                    "maxhp": "1",
+                    "lvl": "1",
+                    "init": "{mods.dex}",
+                    "prof": "2"
+                },
+                "save": {
+                    "str": "0",
+                    "dex": "0",
+                    "con": "0",
+                    "wis": "0",
+                    "int": "0",
+                    "cha": "0"
+                },
+                "skill": {
+                    "acroba": "0",
+                    "animal": "0",
+                    "arcana": "0",
+                    "athlet": "0",
+                    "decept": "0",
+                    "histor": "0",
+                    "insigh": "0",
+                    "intimi": "0",
+                    "invest": "0",
+                    "medici": "0",
+                    "nature": "0",
+                    "percep": "0",
+                    "perfor": "0",
+                    "persua": "0",
+                    "relegi": "0",
+                    "sleigh": "0",
+                    "stealt": "0",
+                    "surviv": "0"
+                }
+        },
+        "equations": {
+                "mod": "floor(({0}-10)/2)",
+                "init": "{0?1d20} + {char.init?{mod.dex?0}}",
+                "strsave": "{0?1d20} + {save.str?0}",
+                "dexsave": "{0?1d20} + {save.dex?0}",
+                "consave": "{0?1d20} + {save.con?0}",
+                "wissave": "{0?1d20} + {save.wis?0}",
+                "intsave": "{0?1d20} + {save.int?0}",
+                "chasave": "{0?1d20} + {save.cha?0}",
+                "acroba": "{0?1d20} + {skill.acroba?0}",
+                "animal": "{0?1d20} + {skill.animal?0}",
+                "arcana": "{0?1d20} + {skill.arcana?0}",
+                "athlet": "{0?1d20} + {skill.athlet?0}",
+                "decept": "{0?1d20} + {skill.decept?0}",
+                "histor": "{0?1d20} + {skill.histor?0}",
+                "insigh": "{0?1d20} + {skill.insigh?0}",
+                "intimi": "{0?1d20} + {skill.intimi?0}",
+                "invest": "{0?1d20} + {skill.invest?0}",
+                "medici": "{0?1d20} + {skill.medici?0}",
+                "nature": "{0?1d20} + {skill.nature?0}",
+                "percep": "{0?1d20} + {skill.percep?0}",
+                "perfor": "{0?1d20} + {skill.perfor?0}",
+                "persua": "{0?1d20} + {skill.persua?0}",
+                "relegi": "{0?1d20} + {skill.relegi?0}",
+                "sleigh": "{0?1d20} + {skill.sleigh?0}",
+                "stealt": "{0?1d20} + {skill.stealt?0}",
+                "surviv": "{0?1d20} + {skill.surviv?0}"
+        }
+}

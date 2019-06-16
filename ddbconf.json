@@ -1,0 +1,8 @@
+{
+        "lookups": {
+                "dnd5e": {
+                        "desc": "All the stats you need for a 5th edition character",
+                        "uri": "https://raw.githubusercontent.com/ttocsneb/ddb_config/master/dnd/5e.json"
+                }
+        }
+}

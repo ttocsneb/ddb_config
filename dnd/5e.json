@@ -9,12 +9,12 @@
                     "cha": "top(4,6,3)"
                 },
                 "mod": {
-                    "str": "mod({stats.str})",
-                    "dex": "mod({stats.dex})",
-                    "con": "mod({stats.con})",
-                    "wis": "mod({stats.wis})",
-                    "int": "mod({stats.int})",
-                    "cha": "mod({stats.cha})"
+                    "str": "mod({stat.str})",
+                    "dex": "mod({stat.dex})",
+                    "con": "mod({stat.con})",
+                    "wis": "mod({stat.wis})",
+                    "int": "mod({stat.int})",
+                    "cha": "mod({stat.cha})"
                 },
                 "char": {
                     "ac": "10",
